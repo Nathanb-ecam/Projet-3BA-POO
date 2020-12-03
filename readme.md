@@ -1,4 +1,4 @@
-# Projet 3BA : POO 
+# Projet 3BA : POO : 18 décembre 2020
 
 ## Créer une plateforme : simulateur des réseaux électriques d'un pays 
 
@@ -64,12 +64,31 @@ Caractéristiques d’un consommateur sur une période de temps déterminée :
 
  
 
- 
 
- 
+La plateforme devra pouvoir s'interfacer avec :
+
+* une plateforme de simulation météo pouvant donner : le niveau d'ensoleillement, la force du vent et la température pour un point géographique donné
+
+* une plateforme de simulation des marchés pouvant donner à chaque instant les prix d'achat et de vente d'électricité à l'étranger et les prix des combustibles
+
+
+La plateforme devra permettre aux chercheurs:
+
+* de construire un réseaux,
+* d'implémenter les différents type de centrale et de consommateur,
+* d'implémenter une simulation de météo,
+* d'implémenter une simulation des marchés,
+* d'implémenter un centre de contrôle permettant d'agir sur la production
+des centrales et sur la distribution des noeuds de distribution.
+* d'obtenir le coût de production, les revenus et la quantité de CO2
+produite à chaque seconde.
+* d'obtenir des messages d'alerte: lignes surchargées, surproduction, sous-production, blackout, ...
 
   
-
+## Rediger un rapport contenant :
+* un diagramme de classe
+* un diagramme de séquence
+* une documentation a destination des chercheurs
  
 
  
