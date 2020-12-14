@@ -11,37 +11,24 @@ namespace ProjetBA
     {
         static void Main(string[] args)
         {
-            CentraleFactory centraleFactory = new CentraleFactory();
 
-            //CentralGaz central1 = centraleFactory.Get(ObjectType.CentralGaz, 100, 50,120) as CentralGaz;
-            //CentralNucl central2 = centraleFactory.Get(ObjectType.CentralNucl, data) as CentralNucl;
-            CentralEolien central3 = centraleFactory.Get(ObjectType.CentralEolien, 100,50,120) as CentralEolien;
-            //CentralSolaire central4 = centraleFactory.Get(ObjectType.CentralSolaire, data) as CentralSolaire;
-            //CentralAcheteur central5 = centraleFactory.Get(ObjectType.CentralAcheteur, data) as CentralAcheteur;
-
+            var central3 = CentralFactory.Build("eolien", 100, 50, 20);
+           
             Console.WriteLine(central3.GetInfo());
-            //central3.MeteoFavorable();
-            //Console.WriteLine(central3.GetInfo());
-            //Console.WriteLine(central2.GetInfo());
+
 
             WeatherData weatherData = new WeatherData();
 
             CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
             
-            weatherData.AddSubscriber(central3);
+            weatherData.AddSubscriber((CentralEolien)central3); 
             
-            weatherData.SetMeasurements(30);
-            Console.WriteLine();
+            weatherData.SetMeasurements(30); 
             weatherData.SetMeasurements(5);
-            //Console.WriteLine();
             weatherData.SetMeasurements(-200);
-            //Console.WriteLine();
+    
 
             Console.WriteLine(central3.GetInfo());
-
-            
-
-
 
         }
     }
@@ -128,7 +115,7 @@ namespace ProjetBA
         }
     }
 
-    interface ICentral
+    public interface ICentral
     {
         String GetInfo();
     }
@@ -254,59 +241,30 @@ namespace ProjetBA
         }
     }
 
-    enum ObjectType
+    public static class CentralFactory
     {
-        CentralNucl,
-        CentralGaz,
-        CentralEolien,
-        CentralSolaire,
-        CentralAcheteur
-    }
-
-
-    class CentraleFactory
-    {
-        ObjectType _type;
-        int production;
-        int coutProd;
-        int co2prod;
-
-        public ICentral Get(ObjectType type, int a, int b, int c)
+        public static ICentral Build(string res, int a , int b, int c)
         {
-            _type = type;
-            production = a;
-            coutProd = b;
-            co2prod = c;
 
-            return GetObject();
-        }
-
-        public ICentral GetObject()
-        {
-            ICentral obj = null;
-
-            switch (_type)
+            switch (res)
             {
-                case ObjectType.CentralGaz:
-                    obj = new CentralGaz(production, coutProd, co2prod) { };
-                    break;
-                case ObjectType.CentralNucl:
-                    obj = new CentralNucl() { };
-                    break;
-                case ObjectType.CentralEolien:
-                    obj = new CentralEolien(production, coutProd, co2prod) { };
-                    break;
-                case ObjectType.CentralSolaire:
-                    obj = new CentralSolaire() { };
-                    break;
-                case ObjectType.CentralAcheteur:
-                    obj = new CentralAcheteur() { };
-                    break;
-            }
+                case "gaz":
+                    return new CentralGaz(a,b,c);
+                case "nuclaire":
+                    return new CentralNucl();
+                case "eolien":
+                    return new CentralEolien(a, b, c);
+                case "solaire":
+                    return new CentralSolaire();
+                default:
+                    return new CentralAcheteur();
 
-            return obj;
+            }
         }
     }
+
+
+
 
 
 }
