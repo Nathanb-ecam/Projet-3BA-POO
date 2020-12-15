@@ -1,26 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace WindowsFormsApp2
+namespace Consommateur
 {
-    static class Program
+    class Program
     {
-        /// <summary>
-        /// Point d'entrée principal de l'application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            Console.WriteLine("...Projet POO...");
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            MessageBox.Show("Un commmentaire");
-           
-            Console.WriteLine("____________________________________________________");
+            Console.WriteLine("Factory des consommateurs");
+            ConsumerFactory bxl = ConsumerFactory("city","bruxelles",120);
+            Console.WriteLine(bxl.GetElectricalConsommation());
+
+            ConsumerFactory belgium = ConsumerFactory("country","Belgique",249);
+            Console.WriteLine(belgium.GetElectricalConsommation());
+
+            ConsumerFactory starkIndustries = ConsumerFactory("country","Belgique",249);
+            Console.WriteLine(starkIndustries.GetElectricalConsommation());
+
+            ConsumerFactory securityDissipator = ConsumerFactory("dissipator","SecurityMachine",250);
+            Console.WriteLine(securityDissipator.GetElectricalConsommation());
+
+            ConsumerFactory france = ConsumerFactory("foreign","France",25);
+            Console.WriteLine(france.GetElectricalConsommation());
+
         }
+        
+
+        public interface IConsumer
+        {
+            String GetElectricalConsommation();
+        }
+    
     }
 }
