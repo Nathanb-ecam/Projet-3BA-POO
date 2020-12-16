@@ -1,34 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace Consommateur
+namespace PrjtInfoBA3_2
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            Console.WriteLine("Factory des consommateurs");
-            ConsumerFactory bxl = ConsumerFactory("city","bruxelles",120);
-            Console.WriteLine(bxl.GetElectricalConsommation());
 
-            ConsumerFactory belgium = ConsumerFactory("country","Belgique",249);
-            Console.WriteLine(belgium.GetElectricalConsommation());
-
-            ConsumerFactory starkIndustries = ConsumerFactory("country","Belgique",249);
-            Console.WriteLine(starkIndustries.GetElectricalConsommation());
-
-            ConsumerFactory securityDissipator = ConsumerFactory("dissipator","SecurityMachine",250);
-            Console.WriteLine(securityDissipator.GetElectricalConsommation());
-
-            ConsumerFactory france = ConsumerFactory("foreign","France",25);
-            Console.WriteLine(france.GetElectricalConsommation());
-
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
-        
-
-        public interface IConsumer
-        {
-            String GetElectricalConsommation();
-        }
-    
     }
 }
