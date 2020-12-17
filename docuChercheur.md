@@ -21,10 +21,10 @@ En appliqaunt le même principe que pour les consommateurs, on a une interface "
 
 ## Diagramme de classe
 
-![](Images/classDiagramG.jpg)
-![](Images/ClassDiagramD.jpg)
+![](FixedImages/classDiagramG.jpg)
+![](FixedImages/ClassDiagramD.jpg)
 
 ## Diagramme de séquence 
 
-![](Images/seq1.png)
-![](Images/seq2.png)
+![](FixedImages/seq1.png)
+![](FixedImages/seq2.png)
