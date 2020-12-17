@@ -20,8 +20,8 @@ En appliqaunt le même principe que pour les consommateurs, on a une interface "
 
 
 ## Diagramme de classe
-![ClassDiagramG](Images\classDiagramG.jpg)
-![ClassDiagramD](C:\Users\Nathan Buchin\Pictures\ClassDiagramD.jpg)
+![ClassDiagramG](C:\Users\Nathan%20Buchin\Desktop\classDiagramG.jpg)
+![ClassDiagramD](C:\Users\Nathan%20Buchin\Desktop\ClassDiagramD.jpg)
 ## Diagramme de séquence 
-![SeqDiagram1](C:\Users\Nathan Buchin\Desktop\DiagramProjetPOO\seq1.jpg)
-![SeqDiagram2](C:\Users\Nathan Buchin\Desktop\DiagramProjetPOO\seq2.jpg)
+![SeqDiagram1](C:\Users\Nathan%20Buchin\Desktop\seq1.png)
+![SeqDiagram2](C:\Users\Nathan%20Buchin\Desktop\seq2.png)
