@@ -20,8 +20,11 @@ En appliqaunt le même principe que pour les consommateurs, on a une interface "
 
 
 ## Diagramme de classe
-<img alt="PartieGauche" src="C:\Users\Nathan Buchin\Desktop\ECAM BAC 3\Software 1\POO project\Rapport Projet POO\classDiagramG.jpg">
-<img alt="PartieDroite" src="C:\Users\Nathan Buchin\Desktop\ECAM BAC 3\Software 1\POO project\Rapport Projet POO\ClassDiagramD.jpg">
+
+![](Images/classDiagramG.jpg)
+![](Images/ClassDiagramD.jpg)
+
 ## Diagramme de séquence 
-<img alt="seq1" src="C:\Users\Nathan Buchin\Desktop\ECAM BAC 3\Software 1\POO project\Rapport Projet POO\seq1.png">
-<img alt="seq2" src="C:\Users\Nathan Buchin\Desktop\ECAM BAC 3\Software 1\POO project\Rapport Projet POO\seq2.png">
+
+![](Images/seq1.png)
+![](Images/seq2.png)
