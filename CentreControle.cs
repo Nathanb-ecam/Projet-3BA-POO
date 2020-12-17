@@ -315,7 +315,7 @@ namespace PrjtInfoBA3_2
         }
     }
 
-    public class CentralFactory: CentreControle
+    public class CentralFactory
     {
         public static ICentral Build(string res, int a, int b, int c)
         {
@@ -341,7 +341,7 @@ namespace PrjtInfoBA3_2
         String GetElectricalConsommation();
     }
 
-    public class ConsumerFactory: CentreControle
+    public class ConsumerFactory
     {
         public static IConsumer Build(string t, string name, int conso)
         {

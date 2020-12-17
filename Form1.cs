@@ -138,7 +138,19 @@ namespace PrjtInfoBA3_2
             }
             catch (Exception e2)
             {
-                MessageBox.Show("veillez remplir tous les parametres climatographique");
+                MessageBox.Show("Veillez remplir tous les parametres climatographique");
+            }
+        }
+
+        private void btnConnexion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lstConnexion.Items.Add(txtCoCentral.Text + " est connecté à " + txtCoConso.Text + " par lignes electrique de 750W puissance");
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show("Veillez remplir tous les parametres de connexion");
             }
         }
     }
