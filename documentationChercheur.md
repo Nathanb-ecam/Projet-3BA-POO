@@ -26,5 +26,5 @@ En appliqaunt le même principe que pour les consommateurs, on a une interface "
 
 ## Diagramme de séquence 
 
-![](FixedImages/seq1.png)
+![](FixedImages/seq1.jpg)
 ![](FixedImages/seq2.png)
