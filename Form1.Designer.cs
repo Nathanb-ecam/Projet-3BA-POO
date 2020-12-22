@@ -242,7 +242,7 @@
             // 
             // btnTemperare
             // 
-            this.btnTemperare.Location = new System.Drawing.Point(345, 112);
+            this.btnTemperare.Location = new System.Drawing.Point(345, 123);
             this.btnTemperare.Name = "btnTemperare";
             this.btnTemperare.Size = new System.Drawing.Size(100, 45);
             this.btnTemperare.TabIndex = 21;
@@ -284,7 +284,7 @@
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Location = new System.Drawing.Point(345, 179);
+            this.btnConnexion.Location = new System.Drawing.Point(345, 193);
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(100, 45);
             this.btnConnexion.TabIndex = 26;

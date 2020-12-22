@@ -92,6 +92,7 @@ namespace PrjtInfoBA3_2
                 {
                     controle2 = ConsumerFactory.Build(txtCreer.Text, txtNom.Text, int.Parse(txtConsomation.Text));
                     visuel2.Add(controle2);
+
                 }
                 catch (Exception e2)
                 {
@@ -144,9 +145,20 @@ namespace PrjtInfoBA3_2
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
+            lstConnexion.Items.Clear();
+
             try
             {
-                lstConnexion.Items.Add(txtCoCentral.Text + " est connecté à " + txtCoConso.Text + " par lignes electrique de 750W puissance");
+                foreach (ICentral unElem in visuel)
+                {
+                    if (unElem.getSort() == txtCoCentral.Text)
+                    {
+                        unElem.Connected(txtCoConso.Text);
+                    }
+
+                    lstConnexion.Items.Add(unElem.getInfo2());
+
+                }
             }
             catch (Exception e2)
             {
