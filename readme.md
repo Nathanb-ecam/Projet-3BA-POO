@@ -14,7 +14,7 @@ Dans le cadre de notre projet il est très utile pour simplifier l'input de cré
 ### Observer Pattern
 L’Observateur est un patron de conception comportemental qui permet à certains objets d’envoyer des notifications concernant leur état à d’autres objets.
 Dans notre cas, la classe observée est WeatherData. Son rôle est de prévenir les classes qui l'observent d'une mise à jour, ici il s'agit des changements de température et de la force du vent. Si on prend par exemple le cas de la classe CentralEolien, puisque on a souhaité que la météo a un impact sur sa production , on l'a définie comme observateur de la classe WeatherData.
-
+ 
 ## Recupérer des données 
 
 Nous avons essayé de regrouper les differentes caractéristiques des centrales ou consommateurs par interfaces. Les interfaces en plus d'être un des éléments le plus important en POO aide aussi à l'organisation du code. La visibilité et la clarté des classes y gagnent beaucoup. 
