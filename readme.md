@@ -1,4 +1,7 @@
 # Document pour les chercheurs 
+Kuijpers Nick 20324
+Buchin Nathan 18092
+
 ## Projet POO BA3 2020-2021
 
 Dans le cadre de notre cours programmation orienté objet en BA3 nous devions simuler un réseau de consommation électrique. L'utilisateur peut avec le bouton "ajouter" ajouter des centrales et des consommateurs. Avec le bouton "update climat" il peut mettre à jour les conditions climato-graphiques de chaque element. Avec le bouton "ajout connexion" l'utilisateur peut créer un réseau de connexion entre consommateurs et producteurs d'énergie.
