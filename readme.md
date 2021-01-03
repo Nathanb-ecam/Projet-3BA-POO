@@ -3,7 +3,7 @@
 
 Dans le cadre de notre cours programmation orienté objet en BA3 nous devions simuler un réseau de consommation électrique. L'utilisateur peut avec le bouton "ajouter" ajouter des centrales et des consommateurs. Avec le bouton "update climat" il peut mettre à jour les conditions climato-graphiques de chaque element. Avec le bouton "ajout connexion" l'utilisateur peut créer un réseau de connexion entre consommateurs et producteurs d'énergie.
 
-Nous voulions que le projet soit facile d'utilisation (user friendly). Dans la programmation nous souhaitions minimiser le couplage et maximiser le cohesion entre les classes et méthodes.
+Nous voulions que le projet soit facile d'utilisation avec Windows Form (user friendly). Dans la programmation nous souhaitions minimiser le couplage et maximiser le cohesion entre les classes et méthodes.
 
 ## Designs Patterns utilisés
 ### Factory pattern
