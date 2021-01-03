@@ -36,7 +36,8 @@ Nous avons envisagé une sauvegarde de données avec Serialise. (le code essayé
 
 ## Diagramme de classe
 
-![](Images/Final.drawio)
+![](Images/firstPart.png)
+![](Images/secondPart.png)
 
 
 
