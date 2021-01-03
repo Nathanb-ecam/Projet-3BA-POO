@@ -31,13 +31,19 @@ La bourse est définie par le chercheur lui-même avant de lancer le programme i
 
 ### Sauvegarde données?
 
-Nous avons envisagé une sauvegarde de données avec Serialise. (le code essayé est en commentaire dans Form1) Nous avions cependant des erreurs d'exécution car nous essayions de sauvegarder deux fichiers (consommateurs et producteur) et si par la suite d'autres classes s'ajoutait le même problème persisterai. Nous sommes alors passé à autre chose. Nous pensons cependant que le problème peut être réglé si les différents fichiers étaient rajoutés par une classe qui elle instantie alors le fichier final qui lui se ferait sauvegarder. Comme il fallais seulement " envisager le stockage " nous avons préféré nous concentrer sur d'autres problèmes. 
+Nous avons envisagé une sauvegarde de données avec Serialise. (le code essayé est en commentaire dans Form1) Nous avions cependant des erreurs d'exécution car nous essayions de sauvegarder deux fichiers (consommateurs et producteur) et si par la suite d'autres classes s'ajoutait le même problème persisterais. Nous sommes alors passé à autre chose. Nous pensons cependant que le problème peut être réglé si les différents fichiers étaient rajoutés par une classe qui elle instancie alors le fichier final qui lui se ferait sauvegarder. Comme il fallait seulement " envisager le stockage " nous avons préféré nous concentrer sur d'autres problèmes. 
 
 
 ## Diagramme de classe
 
-![](FixedImages/classDiagramG.jpg)
-![](FixedImages/ClassDiagramD.jpg)
+![](Images/Gauche.jpg)
+![](Images/Centr.jpg)
+![](Images/Droite.jpg)
+
+
+Suite à quelques changements , le contenu de certaines classes à un peu changer mais les relations entre les classes sont réstées identiques. Voici le contenu actuel des classes qui ont subit des changements : (Il ne s'agit ques des classes "Central")
+
+![](Images/add.jpg)
 
 ## Diagramme de séquence 
 
