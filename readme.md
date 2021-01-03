@@ -36,14 +36,10 @@ Nous avons envisagé une sauvegarde de données avec Serialise. (le code essayé
 
 ## Diagramme de classe
 
-![](Images/Gauche.jpg)
-![](Images/Centr.jpg)
-![](Images/Droite.jpg)
+![](Images/Final.drawio)
 
 
-Suite à quelques changements , le contenu de certaines classes à un peu changer mais les relations entre les classes sont réstées identiques. Voici le contenu actuel des classes qui ont subit des changements : (Il ne s'agit ques des classes "Central")
 
-![](Images/add.jpg)
 
 ## Diagramme de séquence 
 
