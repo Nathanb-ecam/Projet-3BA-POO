@@ -42,6 +42,7 @@ Nous avons envisagé une sauvegarde de données avec Serialise. (le code essayé
 
 
 
+
 ## Diagramme de séquence 
 
 ![](FixedImages/seq1.jpg)
