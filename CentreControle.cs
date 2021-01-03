@@ -188,7 +188,7 @@ namespace PrjtInfoBA3_2
         private float temperature;
         private float wind;
         private string sort;
-        public List<string> connexionEolien = new List<string>();
+        private List<string> connexionEolien = new List<string>();
 
         public CentralEolien(string z, int a, int b, int c)
         {
